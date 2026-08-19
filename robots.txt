@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.etsfreddyendzie.com/sitemap.xml
+Sitemap: https://bibame1234.github.io/salon-Sangm-lima/sitemap.xml
