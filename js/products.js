@@ -20,92 +20,92 @@
 
 const products = [
   {
-    name: "Salon VIP Prestige 7 places",
+    name: "Salon VIP Prestige 6 places",
     category: "salon",
-    price: 450000,
+    price: 350000,
     image: "salon-vip-prestige.jpg",
     badge: "VIP"
   },
   {
-    name: "Salon VIP Royal 5 places",
+    name: "Salon standard angulaire 6 places",
     category: "salon",
-    price: 380000,
+    price: 250000,
     image: "salon-vip-royal.jpg",
-    badge: "VIP"
+    badge: "standard"
   },
   {
-    name: "Salon VIP Impérial cuir",
+    name: "Salon VIP Impérial mousse",
     category: "salon",
-    price: 520000,
+    price: 350000,
     image: "salon-vip-imperial.jpg",
     badge: "VIP"
   },
   {
-    name: "Salon VIP Élégance 6 places",
+    name: "Salon angulaire VIP Élégance 8 places",
     category: "salon",
-    price: 410000,
+    price: 400000,
     image: "salon-vip-elegance.jpg",
-    badge: ""
+    badge: "VIP"
   },
   {
-    name: "Canapé 3 places Confort",
-    category: "canape",
-    price: 150000,
+    name: "salon 5 places Confort",
+    category: "salon",
+    price: 300000,
     image: "canape-3places-confort.jpg",
     badge: ""
   },
   {
-    name: "Canapé d'angle moderne",
-    category: "canape",
+    name: "salon 6 place maron",
+    category: "salon",
     price: 220000,
     image: "canape-angle-moderne.jpg",
     badge: "Neuf"
   },
   {
-    name: "Canapé 2 places tissu",
-    category: "canape",
-    price: 110000,
+    name: "salon angulaire 6 place veloure",
+    category: "salon",
+    price: 350000,
     image: "canape-2places-tissu.jpg",
-    badge: ""
+    badge: "VIP"
   },
   {
-    name: "Canapé lit convertible",
-    category: "canape",
-    price: 180000,
+    name: "salon veloure 6 place",
+    category: "salon",
+    price: 350000,
     image: "canape-lit-convertible.jpg",
     badge: ""
   },
   {
-    name: "Canapé 3 places cuir",
-    category: "canape",
-    price: 195000,
+    name: "salon 6 places deux teintes",
+    category: "salon",
+    price: 200000,
     image: "canape-3places-cuir.jpg",
     badge: ""
   },
   {
-    name: "Fauteuil Cuir Confort",
-    category: "fauteuil",
+    name: "lit confort blanc trois places",
+    category: "lit",
     price: 120000,
     image: "fauteuil-cuir-confort.jpg",
     badge: ""
   },
   {
-    name: "Fauteuil Relax inclinable",
-    category: "fauteuil",
-    price: 135000,
+    name: "salle á manger 6 places",
+    category: "salle á manger",
+    price: 120000,
     image: "fauteuil-relax-inclinable.jpg",
     badge: "Neuf"
   },
   {
-    name: "Fauteuil bureau capitonné",
+    name: "lit VIP trois places confort",
     category: "fauteuil",
     price: 95000,
-    image: "fauteuil-bureau-capitonne.jpg",
+    image: "fauteuil-vip-bois.jpg",
     badge: ""
   },
   {
-    name: "Fauteuil VIP accoudoirs bois",
-    category: "fauteuil",
+    name: "lit VIP trois places confort",
+    category: "lit",
     price: 145000,
     image: "fauteuil-vip-bois.jpg",
     badge: "VIP"

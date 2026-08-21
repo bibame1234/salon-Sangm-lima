@@ -13,6 +13,13 @@ a { text-decoration:none; color:inherit; }
 ul { list-style:none; }
 button { font-family:inherit; cursor:pointer; border:none; background:none; }
 
+/* ============ ACCESSIBILITÉ / SEO ============ */
+.visually-hidden {
+  position:absolute; width:1px; height:1px;
+  padding:0; margin:-1px; overflow:hidden;
+  clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
 /* ============ VARIABLES ============ */
 :root {
   --bg-cream: #FAF7F2;
@@ -155,8 +162,13 @@ header {
   position:relative; overflow:hidden;
 }
 .about-visual i { font-size:110px; color:var(--accent); opacity:0.9; }
+.about-fallback-icon { position:relative; z-index:2; color:var(--accent); opacity:0.9; align-items:center; justify-content:center; width:100%; height:100%; }
+.about-visual img {
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; z-index:2;
+}
 .about-visual::after {
-  content:''; position:absolute; inset:0;
+  content:''; position:absolute; inset:0; z-index:1;
   background:radial-gradient(circle at 30% 30%, rgba(217,123,63,0.15), transparent 60%);
 }
 .about-text p { color:var(--text-muted); margin-bottom:18px; font-size:15.5px; }
@@ -181,8 +193,11 @@ header {
 .service-icon {
   width:52px; height:52px; border-radius:14px; background:var(--accent-light);
   display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  color:var(--accent);
 }
 .service-icon i { font-size:24px; color:var(--accent); }
+.service-icon svg { display:block; }
+.service-icon { color:var(--accent); }
 .service-card h3 { font-size:17px; margin-bottom:10px; }
 .service-card p { font-size:14px; color:var(--text-muted); }
 
@@ -227,6 +242,7 @@ header {
 }
 .product-order:hover { background:var(--accent-light); color:var(--accent); }
 .product-order i { font-size:16px; color:var(--whatsapp); }
+.product-order svg { color:var(--whatsapp); flex-shrink:0; }
 
 /* ============ REFECTION ============ */
 .refection-block {
@@ -246,6 +262,7 @@ header {
   display:flex; align-items:center; justify-content:center;
 }
 .refection-visual i { font-size:100px; color:var(--accent); opacity:0.9; }
+.refection-visual svg { color:var(--accent); opacity:0.9; }
 
 /* ============ CONTACT ============ */
 .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:56px; }
@@ -256,7 +273,9 @@ header {
 .contact-info-card .ic {
   width:46px; height:46px; border-radius:50%; background:var(--accent-light);
   display:flex; align-items:center; justify-content:center; flex-shrink:0;
+  color:var(--accent);
 }
+.contact-info-card .ic svg { display:block; }
 .contact-info-card .ic i { font-size:20px; color:var(--accent); }
 .contact-info-card .label { font-size:12px; color:var(--text-muted); margin-bottom:3px; }
 .contact-info-card .value { font-size:14.5px; font-weight:500; }
